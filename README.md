@@ -12,4 +12,4 @@ The goal of this competition was to predict lung cancer wihtin one year based on
 
 Those images are high-resolution lung CT scans provided by the National Cancer Institute. The orignal paper was published in NEJM 2011 [Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening](http://www.nejm.org/doi/full/10.1056/NEJMoa1102873). The goal of the original study was to use low-dose CT screening as a way to reduce lung cancer mortality. 
 
-Note that this study had CT images from 26,722 subjects, which means the data science bowl data is only a subset of the orignal dataset.
+Note that this study had CT images from 26,722 subjects, which means the data science bowl data is only a subset of the orignal dataset. It's not clear to me that how the data science bowl data was selected from the original dataset. Note that the participants in the original study were old people (age between 55 and 74), had a smoking history. Since this was screening study, not all participants necessarily had lung nodules. 
