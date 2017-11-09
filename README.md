@@ -10,6 +10,10 @@ The goal of this competition was to predict lung cancer wihtin one year based on
 
 <img align="center" height="60%" width="60%" margin="auto" alt="DSB data" src="https://github.com/chvlyl/Lung_Cancer_Prediction/blob/master/img/DSB_data_details.png">
 
+Each subject has multiple images
+
+<img align="center" height="50%" width="50%" margin="auto" alt="DSB data" src="https://github.com/chvlyl/Lung_Cancer_Prediction/blob/master/img/DSB_data_details2.png">
+
 
 Those images are high-resolution lung CT scans provided by the National Cancer Institute. The orignal paper was published in NEJM 2011 [Reduced Lung-Cancer Mortality with Low-Dose Computed Tomographic Screening](http://www.nejm.org/doi/full/10.1056/NEJMoa1102873). The goal of the original study was to use low-dose CT screening as a way to reduce lung cancer mortality. 
 
