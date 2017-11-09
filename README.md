@@ -1,2 +1,2 @@
-# Lung_Cancer_Prediction
+# Lung Cancer Prediction
 Predict lung cancer based on CT images
