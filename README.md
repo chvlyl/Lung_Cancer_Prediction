@@ -4,7 +4,7 @@
 Predict lung cancer based on CT images
 
 ## Data
-1. Data Science Bowl 2017
+1\. Data Science Bowl 2017
 
 The goal of this competition was to predict lung cancer wihtin one year based on the CT images. Data can be downloaded from [Kaggle](https://www.kaggle.com/c/data-science-bowl-2017). All images are in DICOM format, which can be visualized in 3DSlicer. This competition had two phases (stage1 and stage2). Total 471,537 images from 2,101 subjects were included in this dataset. The table below gives detailed numbers. 
 
