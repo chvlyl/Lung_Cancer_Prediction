@@ -25,7 +25,7 @@ DICOM is the standard file format for medical images. The DICOM file not only co
 ```python
 dicom.read_file('image_file')
 ```
-Note that in this dataset, each patient has multiple image slices (each image slice is a DICOM file) and the number of slices varies by patients. After reading in the DICOM file, use the ```ImagePositionPatient```,```SliceLocation``` or ```InstanceNumber``` attribute to access the order of each slice.
+Note that in this dataset, each patient has multiple image slices (each image slice is a DICOM file) and the number of slices varies by patients. After reading in the DICOM file, use the ```ImagePositionPatient```,```SliceLocation``` or ```InstanceNumber``` attributes to access the order of each slice.
 
 
 ## Hounsfield Unit (HU)
