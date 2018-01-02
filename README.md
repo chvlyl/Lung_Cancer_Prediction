@@ -25,8 +25,12 @@ DICOM is the standard file format for medical images. The DICOM file not only co
 ```python
 dicom.read_file('image_file')
 ```
-Note that in this dataset, each patient has multiple image slices (each image slice is a DICOM file) and the number of slices varies by patients. After reading in the DICOM file, use the ```ImagePositionPatient```,```SliceLocation``` or ```InstanceNumber``` attributes to access the order of each slice.
+Note that in this dataset, each patient has multiple image slices (each image slice is a DICOM file) and the number of slices varies by patients. After reading in the DICOM file, use the ```ImagePositionPatient```,```SliceLocation``` or ```InstanceNumber``` attributes to access the order of each slice. Note that for some patients, some of these attributes are missing. 
 
 
 ## Hounsfield Unit (HU)
-In order to make the biomedical image comparable with different imaging acquisition parameters, the Hounsfield units (HU) are used. After normalization, the air and water have -1000 HU and 0 HU, respectively. Soft tissues have relatively small HU while bones have large HU.  
+In order to make the biomedical image comparable with different imaging acquisition parameters, the Hounsfield units (HU) are used. After normalization, the air and water have -1000 HU and 0 HU, respectively. Soft tissues have relatively small HU while bones have large HU. The range of HU measure is between -1000 and 30000 
+
+The values in the raw data are not in the HU unit. I calculated the min and max values for each slice and found that the raw values range from -2000 to 4000.  Clearly, the raw data are not in the HU unit. The two attributes ```RescaleIntercept``` and ```RescaleSlope``` can be used to transform the raw data into HU unit.
+
+The pixels outside the scanning area have the value -2000. This is because the output images are in square shape but the scanning area may be not. Those pixels are corresponding to air so we need to replace -2000 with 0. 
