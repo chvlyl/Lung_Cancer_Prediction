@@ -33,4 +33,8 @@ In order to make the biomedical image comparable with different imaging acquisit
 
 The values in the raw data are not in the HU unit. I calculated the min and max values for each slice and found that the raw values range from -2000 to 4000.  Clearly, the raw data are not in the HU unit. The two attributes ```RescaleIntercept``` and ```RescaleSlope``` can be used to transform the raw data into HU unit.
 
+Here is a figure from [this post](https://medium.com/@taposhdr/medical-image-analysis-with-deep-learning-i-23d518abf531) and [this book](https://web.archive.org/web/20070926231241/http://www.intl.elsevierhealth.com/e-books/pdf/940.pdf)
+<img align="center" height="80%" width="80%" margin="auto" alt="HU scale" src="https://cdn-images-1.medium.com/max/1600/1*HNn99mQnjnkgmbolXYZNVg.png">
+
+
 The pixels outside the scanning area have the value -2000. This is because the output images are in square shape but the scanning area may be not. Those pixels are corresponding to air so we need to replace -2000 with 0. 
